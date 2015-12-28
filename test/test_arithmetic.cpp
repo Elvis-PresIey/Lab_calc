@@ -1,9 +1,6 @@
 #include <gtest.h>
 #include "arithmetic.cpp"
 
-#include <gtest.h>
-#include "arithmetic.cpp"
-
 TEST(arithmetic, can_convert_to_postfix) {
   string str = "a+(b-c)*d-f/(g+h)";
   string str1 = "abc-d*+fgh+/-";
@@ -32,7 +29,7 @@ TEST(arithmetic, throws_when_input_invalid) {
   EXPECT_ANY_THROW(arithmetic::arithmetic_notation(str1));
 }
 
-TEST(arithmetic, throws_when_try_convert_empty_wtring) {
+TEST(arithmetic, throws_when_try_convert_empty_writing) {
   string str1 = "";
   EXPECT_ANY_THROW(arithmetic::arithmetic_notation(str1));
 }
