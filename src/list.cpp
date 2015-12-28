@@ -99,7 +99,7 @@ void list<T>::insertL(T _val) {
 	tmp->next = tmp1;
 }
 
-template <class T>
+template<class T>
 void list<T>::insertA(T _val, node<T> *a)
 {
 	if (pFirst == 0)
